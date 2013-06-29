@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <link href="build/css/app.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.css">
     <!-- <link href="css/style.min.css" rel="stylesheet"> -->
 </head>
 <body>
@@ -35,25 +36,41 @@
 		<div class="main-container">
 			<div class="main-view">
 				<div class="item">
-					<div class="thumbnail"><img src="images/New-York-Jan2005.jpg"" alt="sample" /></div>
+					<div class="thumbnail">
+						<a class="skyimage" href="images/New-York-Jan2005.jpg">
+							<img src="images/New-York-Jan2005.jpg" alt="sample" />
+						</a>
+					</div>
 					<div class="text">
 						ニューヨークの昼
 					</div>
 				</div>
 				<div class="item">
-					<div class="thumbnail"><img src="images/Unknown.jpg" alt="sample" /></div>
+					<div class="thumbnail">
+						<a class="skyimage" href="images/Unknown.jpg">
+						<img src="images/Unknown.jpg" alt="sample" />
+						</a>
+					</div>
 					<div class="text">
 						ニューヨークの夕暮れ	
 					</div>
 				</div>
 				<div class="item">
-					<div class="thumbnail"><img src="images/images2.jpg" alt="sample" /></div>
+					<div class="thumbnail">
+						<a class="skyimage" href="images/images2.jpg">
+						<img src="images/images2.jpg" alt="sample" />
+						</a>
+					</div>
 					<div class="text">
 						ニューヨークの夜
 					</div>
 				</div>
 				<div class="item">
-					<div class="thumbnail"><img src="images/images.jpg" alt="sample" /></div>
+					<div class="thumbnail">
+						<a class="skyimage" href="images/images.jpg">
+						<img src="images/images.jpg" alt="sample" />
+						</a>
+					</div>
 					<div class="text">
 						ニューヨークの橋
 					</div>
@@ -178,6 +195,18 @@
 	<script src="vendor/scrollMonitor.js"></script>
 	<script src="vendor/jquery.fullwidthslider.js"></script>
 	<script src="build/js/app.js"></script>
+	<script type="text/javascript" src="./vendor/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+            $(document).ready(function() {
+
+    /* This is basic - uses default settings */
+                $(".skyimage").fancybox();
+                 $("a#single_image").fancybox();
+                 $("a#inline").fancybox({
+                      'hideOnContentClick': true
+                   });  
+            });
+        </script>
 	<!-- <script src="js/index.min.js"></script> -->
 </body>
 </html>
