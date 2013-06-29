@@ -16,7 +16,7 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-body { background-color: #e5e5e5; }
+body { background-color: #453345; }
 
 #wrapper { margin: 0 auto; }
 
@@ -32,3 +32,24 @@ body { background-color: #e5e5e5; }
 .item .thumbnail { padding: 5px 5px 10px 5px; }
 .item .thumbnail img { width: 216px; }
 .item .text { font-size: 11px; padding: 0 5px 10px 5px; }
+
+#header .header-nav ul li {
+	float: left;
+	line-height: 41px;
+	margin: 0 10px 0 10px;
+}
+#header .header-nav ul li a{
+	color: #737373;
+	text-decoration: none;
+	display: block;
+}
+#header .header-nav ul li a:hover {
+	color: #000000;
+	text-decoration: underline;
+	border-bottom: 3px solid #336323;
+}
+.icon {
+	position: absolute;
+	right: 7px;
+	top: 7px;
+}
